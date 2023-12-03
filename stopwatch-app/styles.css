@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Fira+Sans:ital@1&family=Montserrat:wght@200&family=Noto+Sans:wght@300&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto+Mono:wght@300&display=swap');
+:root{
+    --primary:crimson;
+    --dark:#1f2937;
+    --darkdark:#111827;
+    --light:#f3f4f6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Roboto Mono',sans-serif ;
+}
+
+body{
+    background: var(--dark);
+    color: var(--light);
+}
+
+.watch{
+    text-align: center;
+    background-color: var(--darkdark);
+    width: 100%;
+    max-width: 360px;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.time{
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    user-select: none;
+
+    color: var(--light);
+    font-size: 1.25rem;
+    background-color: var(--primary);
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+}
+
+button:hover{
+    background:#7091F5;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: var(--dark);
+}
